@@ -1,0 +1,38 @@
+@use "../../../styles/globals.scss" as globals;
+
+.listComments {
+  margin-bottom: 15px;
+  padding: 8px 25px 8px 25px;
+  background-color: globals.$background-content;
+  border-radius: 8px;
+}
+
+.wrapperNameBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textComments {
+  padding: 15px;
+  opacity: 0.8;
+}
+
+.wrapperDetailes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btnAdd {
+  padding: 5px;
+  color: globals.$white;
+  background-color: globals.$blue-button;
+  border-radius: 5px;
+}
+.btnAdd:hover {
+  background-color: globals.$button-hover;
+}
+.date {
+  opacity: 0.7;
+  font: globals.$h5-300-24-Roboto-Light;
+}

@@ -1,0 +1,84 @@
+@use "../../../styles/globals.scss" as globals;
+
+.wrapperMain {
+  max-width: 73%;
+  margin: 65px auto;
+  
+}
+
+.title {
+  margin-bottom: 15px;
+  font: globals.$h3-400-42-Roboto-Regular;
+  opacity: 0.8;
+   @media (max-width: 580px) {
+        font-size: 22px;
+  }
+}
+
+.textGreetings {
+  margin-bottom: 10px;
+  font: globals.$medium-400-16-Roboto-Regular;
+  max-width: 420px;
+  opacity: 0.8;
+  @media (max-width: 580px) {
+        font-size: 14px;
+  }
+}
+
+.wrapperMap {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  @media (max-width: 880px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.wrapperContent {
+  max-width: 41%;
+  background-color: #f5f7ff;
+  @media (max-width: 880px) {
+    max-width: 70%;
+  }
+}
+
+.wrapperContact {
+  max-width: 380px;
+  display: flex;
+  gap: 10px;
+  padding: 13px;
+  align-items: flex-start;
+}
+
+.svg {
+  max-width: 23px;
+  @media (max-width: 410px) {
+    max-width: 14px;
+  }
+}
+
+.wrapperText {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 3px;
+  @media (max-width: 410px) {
+    display: inline;
+  }
+}
+
+.textTitle {
+  font: globals.$normal-400-20-Roboto-Regular;
+  @media (max-width: 410px) {
+    max-width: 11px;
+    margin: 5px;
+  }
+}
+
+.text {
+  font: globals.$h5-300-24-Roboto-Light;
+  @media (max-width: 410px) {
+    max-width: 11px;
+  }
+}

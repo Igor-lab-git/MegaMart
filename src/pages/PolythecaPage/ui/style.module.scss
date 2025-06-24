@@ -1,0 +1,77 @@
+@use "../../../styles/globals.scss" as globals;
+
+.wrapperMain {
+  max-width: 73%;
+  margin: 30px auto;
+}
+
+.wrapperNavigate {
+  display: flex;
+  gap: 10px;
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
+  @media (max-width: 700px) {
+    font-size: 12px;
+  }
+  @media (max-width: 450px) {
+    font-size: 11px;
+    gap: 5px;
+  }
+  @media (max-width: 370px) {
+    font-size: 10px;
+    gap: 3px;
+  }
+  
+}
+
+.linkBack {
+  opacity: 0.8;
+}
+
+.linkBack:hover {
+  color: globals.$button-hover;
+}
+
+.mainTitle {
+  font: globals.$h4-400-32-Roboto-Regular;
+  margin: 10px 0 10px 5px;
+  @media (max-width: 900px) {
+    font-size: 27px;
+  }
+   @media (max-width: 700px) {
+    font-size: 23px;
+  }
+  @media (max-width: 450px) {
+    font-size: 20px;
+  }
+}
+
+.text {
+  margin: 10px 0 10px 0;
+  line-height: 1.2;
+  opacity: 0.8;
+  @media (max-width: 900px) {
+    font-size: 14px;
+  }
+  @media (max-width: 700px) {
+    font-size: 11px;
+  }
+  @media (max-width: 450px) {
+    font-size: 10px;
+  }
+}
+
+.textTitle {
+  font: globals.$h5-400-24-Roboto-Regular;
+  margin: 10px 0 10px 3px;
+  @media (max-width: 900px) {
+    font-size: 22px;
+  }
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
+}

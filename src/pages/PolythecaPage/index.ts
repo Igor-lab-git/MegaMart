@@ -1,0 +1,1 @@
+export { PolythecaPage } from "./ui/PolythecaPage";

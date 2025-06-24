@@ -1,0 +1,139 @@
+@use "../../../styles/globals.scss" as globals;
+/* BurgerMenu.css */
+.burgerMenu {
+  position: relative;
+  left: 250px;
+  @media (max-width: 1300px) {
+    left: 150px;
+}
+@media (max-width: 1200px) {
+    left: 90px;
+}
+@media (max-width: 1000px) {
+    left: 0px;
+}
+}
+
+
+.burgerButton {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  z-index: 1001;
+  position: relative;
+  @media (max-width: 900px) {
+    left: 70px;
+}
+// @media (max-width: 900px) {
+//     left: 20px;
+// }
+  @media (max-width: 750px) {
+    left: 120px;
+  }
+  @media (max-width: 580px) {
+    left: 90px;
+  }
+
+}
+
+.burgerLine {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: globals.$blue-button;;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.menuItems {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 990px) {
+  .menuItems {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 990px) {
+  .menuItems {
+    gap: 10px;
+  }
+}
+
+.menuItems ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menuItems li {
+  margin-left: 20px;
+}
+
+.menuItems a {
+  color: globals.$burger-button-grey;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.menuItems a:hover {
+  color: globals.$blue-button;
+  text-decoration: underline;
+  transition: color 0.5s ease;
+}
+
+@media (max-width: 950px) {
+  .burgerButton {
+    display: block;
+    left: 70px;
+  }
+
+  .burgerButton.open .burgerLine:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .burgerButton.open .burgerLine:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burgerButton.open .burgerLine:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+  }
+
+  .menuItems {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: globals.$background-content;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    flex-direction: column;
+    padding: 70px 20px 20px;
+    font: globals.$mobile-h4-700-48-Disket-Mono-Bold;
+    animation: slideIn 0.5s forwards;
+    animation: slideOut 0.5s forwards;
+  }
+
+  .menuItems.open {
+    right: 0;
+  }
+
+  .menuItems ul {
+    flex-direction: column;
+  }
+
+  .menuItems li {
+    margin: 15px 0;
+  }
+}

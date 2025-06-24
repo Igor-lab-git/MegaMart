@@ -1,0 +1,109 @@
+@use "../../../styles/globals.scss" as globals;
+
+.listWrapper {
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  height: 165px;
+  width: 100%;
+  border-bottom: 1px solid globals.$gray-dark;
+  @media (max-width: 600px) {
+    border: 1px solid globals.$gray-dark;
+    height: 285px;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;
+  }
+}
+
+.wrapperTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.imgCart {
+  object-fit: contain;
+  width: 200px;
+  height: 120px;
+}
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin-left: 30px;
+
+  @media (max-width: 600px) {
+    align-items: center;
+    margin: 10px 0 0 0;
+    row-gap: 5px;
+  }
+}
+
+.titleCart {
+  color: globals.$blue-button;
+}
+
+.priceCart {
+  color: globals.$blue-button;
+}
+
+.wrapperButtonsCuonter {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  @media (max-width: 600px) {
+    margin-left: 72px;
+  }
+  @media (max-width: 400px) {
+    margin-left: 62px;
+  }
+  @media (max-width: 380px) {
+    margin-left: 55px;
+  }
+}
+
+.wrapperButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 80px;
+  border: 1px solid globals.$burger-button-grey;
+  border-radius: 5px;
+}
+
+.btnCounter {
+  width: 30px;
+}
+
+.btnCounter:hover {
+  color: globals.$blue-button;
+}
+
+.count {
+  font-size: 18px;
+  color: globals.$blue-button;
+}
+
+.wrapperCount {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 45px 0 0 45px;
+}
+
+.titleCount {
+  color: globals.$blue-button;
+  font-size: 20px;
+}
+
+
+.buttonIconRemove {
+  opacity: 0.7;
+}
+.buttonIconRemove:hover {
+   opacity: 1;
+  color: globals.$blue-button;
+}
+

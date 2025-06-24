@@ -1,0 +1,122 @@
+@use "../../../styles/globals.scss" as globals;
+
+@keyframes heartIconbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.heartWrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 4px;
+  right: 7px;
+}
+
+.heartText {
+  font: globals.$small-400-12-Roboto-Regular;
+}
+
+.heartIcon {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  color: globals.$error;
+  fill: globals.$error;
+}
+
+.heartIcon:hover {
+  animation: heartIconbeat 1s infinite;
+  color: globals.$error;
+}
+
+.wrapperCard {
+  position: relative;
+  min-height: 350px;
+  width: 220px;
+  border-radius: 3px;
+  background-color: globals.$wrapper-card;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  @media (max-width: 1350px) {
+    max-width: 200px;
+  }
+}
+.wrapperCard:hover {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.imgCart {
+  width: 70%;
+  object-fit: cover;
+}
+
+.wrapperDescription {
+  display: flex;
+  max-width: 165px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.titleCard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font: globals.$medium-400-16-Roboto-Regular;
+  font-weight: 600;
+  color: globals.$button-hover;
+}
+
+.descriptionText {
+  font-size: 12px;
+  color: globals.$grey-medium;
+}
+
+.priceWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.price {
+  color: globals.$black;
+  font: globals.$mobile-h5-700-48-Disket-Mono-Bold;
+  font-size: 20px;
+}
+
+.priceDiscount {
+  opacity: 0.5;
+  text-decoration: line-through;
+  font: globals.$small-400-12-Roboto-Regular;
+}
+
+.button {
+  height: 30px;
+  width: 170px;
+  border-radius: 6px;
+  border: 1px solid globals.$blue-button;
+  background-color: globals.$blue-button;
+  color: globals.$white;
+}
+
+.button:hover {
+  opacity: 0.7;
+  transition: color 0.5s ease;
+}
+
+.button:active {
+  opacity: 0.6;
+}

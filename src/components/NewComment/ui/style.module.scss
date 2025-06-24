@@ -1,0 +1,64 @@
+@use "../../../styles/globals.scss" as globals;
+
+.titleComment {
+  margin: 20px 0 20px 0;
+  @media (max-width: 450px) {
+    font-size: 18px;
+  }
+}
+
+.wrapperForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  border: 2px solid globals.$input-color;
+  border-radius: 4px;
+  background-color: globals.$background-content;
+  background-position: 10px 10px;
+  padding: 12px 20px 12px 40px;
+}
+
+.input {
+  height: 30px;
+  border: 2px solid globals.$input-color;
+  border-radius: 4px;
+}
+.input:focus {
+  outline: 2px solid globals.$input-color;
+}
+input::placeholder {
+  color: globals.$blue-color;
+  opacity: 0.8;
+}
+input:focus::placeholder {
+  color: globals.$blue-color;
+  opacity: 0.5;
+}
+input {
+  color: globals.$blue-button;
+}
+
+.textarea {
+  max-width: 100%;
+  border: 2px solid globals.$input-color;
+  border-radius: 4px;
+}
+.textarea:focus {
+  outline: 2px solid globals.$input-color;
+}
+textarea::placeholder {
+  color: globals.$blue-color;
+  opacity: 0.8;
+}
+textarea:focus::placeholder {
+  color: globals.$blue-color;
+  opacity: 0.5;
+}
+textarea {
+  color: globals.$blue-button;
+}
+.nameComments {
+  font: globals.$medium-400-16-Roboto-Regular;
+  font-weight: 600;
+}

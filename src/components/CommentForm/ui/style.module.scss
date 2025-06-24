@@ -1,0 +1,90 @@
+@use "../../../styles/globals.scss" as globals;
+
+.wrapperForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  border: 2px solid globals.$input-color;
+  border-radius: 4px;
+  background-color: globals.$background-content;
+  background-position: 10px 10px;
+  padding: 12px 20px 12px 40px;
+}
+
+.input {
+  height: 30px;
+  border: 2px solid globals.$input-color;
+  border-radius: 4px;
+}
+.input:focus {
+  outline: 2px solid globals.$input-color;
+}
+input::placeholder {
+  color: globals.$blue-color;
+  opacity: 0.8;
+}
+input:focus::placeholder {
+  color: globals.$blue-color;
+  opacity: 0.5;
+}
+input {
+  color: globals.$blue-button;
+}
+
+.textarea {
+  max-width: 100%;
+  border: 2px solid globals.$input-color;
+  border-radius: 4px;
+}
+.textarea:focus {
+  outline: 2px solid globals.$input-color;
+}
+textarea::placeholder {
+  color: globals.$blue-color;
+  opacity: 0.8;
+}
+textarea:focus::placeholder {
+  color: globals.$blue-color;
+  opacity: 0.5;
+}
+textarea {
+  color: globals.$blue-button;
+}
+.nameComments {
+  font: globals.$medium-400-16-Roboto-Regular;
+  font-weight: 600;
+}
+
+.listComments {
+  margin-bottom: 15px;
+  padding: 8px 25px 8px 25px;
+  background-color: globals.$background-content;
+  border-radius: 8px;
+}
+
+.wrapperNameBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textComments {
+  padding: 15px;
+  opacity: 0.8;
+}
+
+.wrapperDetailes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.btnAdd {
+  padding: 5px;
+  color: globals.$white;
+  background-color: globals.$blue-button;
+  border-radius: 5px;
+}
+.btnAdd:hover {
+  background-color: globals.$button-hover;
+}

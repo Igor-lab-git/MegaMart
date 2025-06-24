@@ -1,0 +1,133 @@
+@use "../../../styles//globals.scss" as globals;
+
+.contactsHeader {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 100px;
+  gap: 20px;
+  height: 45px;
+  background-color: globals.$black;
+  @media (max-width: 750px) {
+    padding-right: 30px;
+  }
+  @media (max-width: 530px) {
+    font-size: 14px;
+    gap: 15px;
+  }
+}
+
+.contactsHeaderSpan {
+  color: globals.$white;
+  @media (max-width: 530px) {
+    font-size: 14px;
+  }
+}
+
+.socialWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.socialIcon {
+  border-radius: 15px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 0 25px 0 65px;
+  background: globals.$background-content;
+  border-bottom: 1px solid globals.$input-border;
+
+  @media (max-width: 530px) {
+    padding: 0 0px 0 25px;
+  }
+  @media (max-width: 410px) {
+    padding: 0 0px 0 9px;
+  }
+}
+
+.myStor {
+  display: flex;
+  color: globals.$blue-color;
+  text-decoration: none;
+  font: 700 24px RFDewi-Black, sans-serif;
+  font-size: 22px;
+  align-items: flex-end;
+  gap: 10px;
+
+  @media (max-width: 750px) {
+    font-size: 19px;
+    width: 30px;
+  }
+  @media (max-width: 410px) {
+    font-size: 17px;
+  }
+}
+
+.myStor:hover {
+  color: globals.$blue-color;
+}
+
+.myStor:active {
+  opacity: 1;
+}
+
+.wrapperCart {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  width: 225px;
+  height: 50px;
+  border-radius: 61px;
+  align-items: center;
+  justify-content: center;
+  @media (max-width: 620px) {
+    gap: 8px;
+    width: 185px;
+  }
+}
+
+.cartImg {
+  width: 40px;
+  height: 30px;
+  opacity: 0.6;
+}
+
+.cartImg:hover {
+  opacity: 1;
+  color: globals.$blue-button;
+}
+
+.cartImgLogin {
+  width: 40px;
+  height: 35px;
+  opacity: 0.6;
+}
+.cartImgLogin:hover {
+  opacity: 1;
+  color: globals.$blue-button;
+}
+
+.cartCount {
+  position: absolute;
+  font: 400 20px Roboto-Regular, sans-serif;
+  color: #030bfc;
+  height: 22px;
+  width: 22px;
+  display: flex;
+  justify-content: center;
+  left: 45px;
+  align-items: center;
+  top: 12px;
+  @media (max-width: 620px) {
+   left: 35px;
+  }
+}
+
+.titleCart {
+  font: 700 24px RFDewi-Black, sans-serif;
+}

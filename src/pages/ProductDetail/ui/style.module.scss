@@ -1,0 +1,116 @@
+@use "../../../styles/globals.scss" as globals;
+
+.wrapperMain {
+  max-width: 73%;
+  margin: 30px auto;
+}
+.navigate {
+  display: flex;
+  gap: 10px;
+  @media (max-width: 450px) {
+    font-size: 15px;
+    gap: 5px;
+  }
+}
+.navigateBtn {
+  opacity: 0.8;
+}
+.navigateBtn:hover {
+  color: globals.$button-hover;
+  text-decoration: underline;
+}
+
+.wrapperCardDetail {
+  margin-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-bottom: 1px solid globals.$burger-button-grey;
+  gap: 20px;
+  @media (max-width: 450px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.wrapperImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  max-width: 80%;
+  @media (max-width: 1100px) {
+    max-width: 70%;
+  }
+  @media (max-width: 750px) {
+    max-width: 87%;
+  }
+  @media (max-width: 690px) {
+    max-width: 89%;
+  }
+}
+
+.wrapperCardContent {
+  padding: 35px;
+  background-color: globals.$background-content;
+  max-width: 50%;
+  @media (max-width: 1100px) {
+    font-size: 11px;
+  }
+    @media (max-width: 450px) {
+     max-width: 100%;
+      padding: 15px;
+  }
+}
+
+.title {
+  color: globals.$button-hover;
+  font: globals.$normal-400-20-Roboto-Regular;
+  @media (max-width: 750px) {
+    font-size: 14px;
+  }
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+.textDescription {
+  margin: 10px 0 10px 0;
+  opacity: 0.8;
+}
+
+.wrapperBtn {
+  display: flex;
+  gap: 20px;
+  @media (max-width: 900px) {
+    gap: 5px;
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
+  @media (max-width: 550px) {
+    align-items: center;
+  }
+}
+
+.price {
+  color: globals.$button-hover;
+  font: globals.$h5-400-24-Roboto-Regular;
+  @media (max-width: 550px) {
+    font-size: 19px;
+  }
+}
+
+.btnAdd {
+  padding: 5px;
+  color: globals.$white;
+  background-color: globals.$blue-button;
+  border-radius: 5px;
+  @media (max-width: 900px) {
+    max-width: 100px;
+    padding: 3px;
+  }
+}
+.btnAdd:hover {
+  background-color: globals.$button-hover;
+}

@@ -1,0 +1,100 @@
+@use "../../../styles/globals.scss" as globals;
+
+.carousel {
+  position: relative;
+  max-width: 79%;
+  height: 220px;
+  margin: 15px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  @media (max-width: 1350px) {
+    max-width: 70%;
+    height: 180px;
+  }
+  @media (max-width: 1250px) {
+    height: 155px;
+    top: 35%;
+  }
+  @media (max-width: 1170px) {
+    height: 140px;
+  }
+  @media (max-width: 1110px) {
+    height: 135px;
+  }
+  @media (max-width: 990px) {
+    height: 120px;
+  }
+  @media (max-width: 845px) {
+    height: 105px;
+  }
+  @media (max-width: 765px) {
+    height: 90px;
+  }
+  @media (max-width: 690px) {
+    max-width: 65%;
+    height: 80px;
+  }
+  @media (max-width: 590px) {
+    height: 70px;
+  }
+}
+
+.carouselContainer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carouselSlide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: globals.$grey-element;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  @media (max-width: 1390px) {
+    top: 45%;
+  }
+  @media (max-width: 845px) {
+    width: 35px;
+    height: 35px;
+  }
+   @media (max-width: 765px) {
+    width: 30px;
+    height: 30px;
+  }
+  @media (max-width: 690px) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.carouselButton:hover {
+  opacity: 0.8;
+  background-color: globals.$white;
+  color: globals.$blue-button;
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}

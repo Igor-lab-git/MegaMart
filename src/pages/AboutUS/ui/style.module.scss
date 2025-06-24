@@ -1,0 +1,59 @@
+@use "../../../styles/globals.scss" as globals;
+
+.wrapperMain {
+  max-width: 73%;
+  margin: 30px auto;
+}
+
+.mainTitle {
+  font: 700 28px RFDewi-Black, sans-serif;
+  margin: 10px 0 10px 5px;
+  @media (max-width: 1000px) {
+    font-size: 23px;
+  }
+  @media (max-width: 850px) {
+    font-size: 21px;
+  }
+}
+
+.title_H3 {
+  margin: 10px 0 10px 5px;
+  @media (max-width: 1000px) {
+    font-size: 17px;
+  }
+  @media (max-width: 850px) {
+    font-size: 15px;
+  }
+}
+
+.text {
+  margin: 15px 0 15px 0;
+  line-height: 1.2;
+  opacity: 0.8;
+  @media (max-width: 1000px) {
+    font-size: 14px;
+  }
+  @media (max-width: 850px) {
+    font-size: 13px;
+  }
+}
+
+.linkBack {
+  opacity: 0.8;
+}
+
+.linkBack:hover {
+  color: #007bff;
+}
+
+.wrapperList li {
+  list-style: square;
+  margin: 5px 0 5px 0;
+  color: globals.$blue-color;
+  @media (max-width: 1000px) {
+    font-size: 14px;
+  }
+  @media (max-width: 850px) {
+    font-size: 13px;
+  }
+}

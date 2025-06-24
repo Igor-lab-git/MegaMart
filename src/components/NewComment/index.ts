@@ -1,0 +1,1 @@
+export { NewComment } from "./ui/NewComment";

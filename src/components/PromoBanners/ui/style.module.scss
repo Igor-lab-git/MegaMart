@@ -1,0 +1,33 @@
+@use "../../../styles/globals.scss" as globals;
+
+.wrapperImg {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.homeBanner_2 {
+  @media (max-width: 1350px) {
+    width: 200px;
+  }
+  @media (max-width: 1170px) {
+    width: 180px;
+  }
+  @media (max-width: 1050px) {
+    width: 150px;
+  }
+  @media (max-width: 990px) {
+    width: 190px;
+  }
+  @media (max-width: 890px) {
+    width: 165px;
+  
+  }
+  @media (max-width: 800px) {
+    width: 160px;
+  
+  }
+  @media (max-width: 760px) {
+    display: none;
+  }
+}

@@ -1,0 +1,24 @@
+@use "../../../styles/globals.scss" as globals;
+
+.wrapperStart {
+  display: flex;
+  cursor: pointer;
+  @media (max-width: 550px) {
+    justify-content: center;
+  }
+}
+
+.inputRadio {
+  display: none;
+}
+.star {
+  cursor: pointer;
+}
+
+.star:active {
+  background-color: globals.$gold;
+}
+
+.gold {
+  color: globals.$gold;
+}

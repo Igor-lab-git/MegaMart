@@ -1,0 +1,68 @@
+@use "../../../styles//globals.scss" as globals;
+
+.wrapperShop {
+  max-width: 73%;
+  margin: 30px auto;
+}
+
+.cartList {
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.titleShope {
+  margin: 20px 0 0 40px;
+  font-size: 25px;
+  color: globals.$grey-light;
+  opacity: 0.8;
+}
+
+.cartIsEmpty {
+  margin: 20px 0 0 40px;
+  font-size: 25px;
+  color: globals.$blue-button;
+  opacity: 0.7;
+}
+
+.wrapperCalculate {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  flex-direction: column;
+  @media (max-width: 390px) {
+    margin: 20px 0 0px 0;
+  }
+}
+.wrappreTitleCount {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+.btnClearCartPage {
+  border: 2px solid globals.$black;
+  border-radius: 4px;
+  padding: 6px;
+  align-items: center;
+  font: globals.$h4-300-32-Roboto-Light;
+}
+.btnClearCartPage:hover {
+  border-color: globals.$button-hover;
+  color: globals.$button-hover;
+  transition: color 0.5s ease;
+}
+
+.titleCalculate {
+  font-size: 18px;
+  color: globals.$blue-button;
+}
+
+.calculateCount {
+  color: globals.$blue-button;
+  font: globals.$mobile-h5-700-48-Disket-Mono-Bold;
+}
