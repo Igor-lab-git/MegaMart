@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Redirecting...</title>
     <script>
-      sessionStorage.redirect = location.href;
+      const segment = 1; // Уровень вложенности (/repo-name/)
+      sessionStorage.redirect = '/' + 
+        location.pathname.split('/').slice(segment + 1).join('/');
+      location.replace('/' + location.pathname.split('/').slice(0, segment + 1).join('/'));
     </script>
-    <meta http-equiv="refresh" content="0;URL='/'">
   </head>
-  <body></body>
+  <body>
+    Redirecting...
+  </body>
 </html>
