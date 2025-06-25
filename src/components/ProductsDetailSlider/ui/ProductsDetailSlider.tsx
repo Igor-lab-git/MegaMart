@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import style from "./style.module.scss";
 
 interface ImageCarouselProps {
@@ -7,7 +7,7 @@ interface ImageCarouselProps {
 
 
 
-export const ProductsDetailSlider = ({ images = [] }: ImageCarouselProps) => {
+export const ProductsDetailSlider = ({ images = [] }: ImageCarouselProps): React.JSX.Element => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const goToPrev = () => {

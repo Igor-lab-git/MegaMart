@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import React, {  useState } from "react";
 import { Product } from "../../../types/index";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../../features/ui/cartSlice";
@@ -10,7 +10,7 @@ interface Props {
   product: Product;
 }
 
-export const ProductCard: FC<Props> = ({ product }: Props) => {
+export const ProductCard = ({ product }: Props): React.JSX.Element => {
   const [active, setActive] = useState<boolean>(false);
 
   const dispatch = useDispatch();
