@@ -26,11 +26,8 @@ export const NewComment = (): React.JSX.Element => {
     }
   }, [comments]);
 
-const addComment = (username: string, text: string) => {
-    setComments([
-      ...comments,
-      { id: Date.now(), productId, username, text },
-    ]);
+  const addComment = (username: string, text: string) => {
+    setComments([...comments, { id: Date.now(), productId, username, text }]);
   };
 
   const removeComment = (id: number) => {
@@ -46,7 +43,7 @@ const addComment = (username: string, text: string) => {
       <div>
         <ul className={style.boxComments}>
           {productComments.map((comment) => (
-           <CommentItem
+            <CommentItem
               key={comment.id}
               comment={comment}
               onRemove={removeComment}

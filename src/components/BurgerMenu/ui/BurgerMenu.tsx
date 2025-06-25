@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import style from "./style.module.scss";
 import { Link } from "react-router-dom";
 
-export const BurgerMenu = () => {
+export const BurgerMenu = (): React.JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
   const [, setWindowWidth] = useState(window.innerWidth);
 

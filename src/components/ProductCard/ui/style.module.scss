@@ -12,7 +12,6 @@
   }
 }
 
-
 .heartWrapper {
   display: flex;
   align-items: center;
@@ -53,13 +52,16 @@
   }
 }
 .wrapperCard:hover {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 .imgCart {
   width: 70%;
   object-fit: cover;
+}
+
+.titleProduct:hover {
+  color: globals.$blue-button;
 }
 
 .wrapperDescription {
@@ -78,6 +80,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font: globals.$medium-400-16-Roboto-Regular;
   font-weight: 600;
   color: globals.$button-hover;
+}
+.titleCard:hover {
+  transform: scale(1.05);
 }
 
 .descriptionText {

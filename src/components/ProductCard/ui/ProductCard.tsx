@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import { Product } from "../../../types/index";
 import { useDispatch } from "react-redux";
 import { addItem } from "../../../features/ui/cartSlice";
@@ -22,19 +22,23 @@ export const ProductCard = ({ product }: Props): React.JSX.Element => {
   return (
     <div className={style.wrapperCard}>
       <div className={style.heartWrapper}>
-      <Heart
-        className={style.heartIcon}
-        width={20}
-        height={20}
-        active={active}
-        onClick={() => setActive(!active)}
-      />
+        <Heart
+          className={style.heartIcon}
+          width={20}
+          height={20}
+          active={active}
+          onClick={() => setActive(!active)}
+        />
       </div>
       <div className={style.wrapperDescription}>
-       
         <Link className={style.titleCard} to={`/product/${product.id}`}>
-         <img className={style.imgCart}src={product.imageUrl[0]}alt={product.title}/>{product.title}
-         </Link>
+          <img
+            className={style.imgCart}
+            src={product.imageUrl[0]}
+            alt={product.title}
+          />
+          <span className={style.titleProduct}>{product.title}</span>
+        </Link>
 
         <p className={style.descriptionText}>{product.description}</p>
         <div className={style.priceWrapper}>

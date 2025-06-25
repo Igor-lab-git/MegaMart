@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react";
+import React, { ChangeEvent } from "react";
 import style from "./style.module.scss";
 
 interface SearchBar {
@@ -7,7 +7,11 @@ interface SearchBar {
   onReset: () => void;
 }
 
-export const SearchBar = ({ searchTerm, onSearchChange, onReset }: SearchBar) => (
+export const SearchBar = ({
+  searchTerm,
+  onSearchChange,
+  onReset,
+}: SearchBar): React.JSX.Element => (
   <div className={style.inputWrapper}>
     <input
       className={style.input}

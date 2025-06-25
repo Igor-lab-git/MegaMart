@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { addItem } from "../../../features/ui/cartSlice";
@@ -10,7 +10,7 @@ import { ProductsDetailSlider } from "../../../components/ProductsDetailSlider";
 import { Breadcrumbs } from "../../../components/Breadcrumbs";
 import style from "./style.module.scss";
 
-export const ProductDetail = () => {
+export const ProductDetail = (): React.JSX.Element => {
   const { id } = useParams<{ id: string }>();
   const dispatch = useDispatch<AppDispatch>();
 
@@ -65,7 +65,7 @@ export const ProductDetail = () => {
           <StarRating />
         </div>
       </div>
-        <NewComment />
+      <NewComment />
     </div>
   );
 };

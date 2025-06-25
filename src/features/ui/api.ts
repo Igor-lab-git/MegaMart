@@ -1,4 +1,4 @@
-import {IBanner, Product} from "../../types";
+import { IBanner, Product } from "../../types";
 
 export const fetchData = async <T>(url: string): Promise<T> => {
   const response = await fetch(url);
@@ -8,6 +8,10 @@ export const fetchData = async <T>(url: string): Promise<T> => {
   return response.json();
 };
 
-export const fetchProducts = () => fetchData<Product[]>("https://igor-lab-git.github.io/my-mock-api/db.json");
+export const fetchProducts = () =>
+  fetchData<Product[]>("https://igor-lab-git.github.io/my-mock-api/db.json");
 
-export const fetchBannerImages = () => fetchData<IBanner[]>("https://igor-lab-git.github.io/my-mock-api/banners.json");
+export const fetchBannerImages = () =>
+  fetchData<IBanner[]>(
+    "https://igor-lab-git.github.io/my-mock-api/banners.json"
+  );

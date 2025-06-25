@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import style from "./style.module.scss"
+import React, { useEffect, useState } from "react";
+import style from "./style.module.scss";
 
-export const StarRating = () => {
+export const StarRating = (): React.JSX.Element => {
   const [rating, setRating] = useState<number>(() => {
     const savedRating = localStorage.getItem("starRating");
     return savedRating ? parseInt(savedRating) : 0;
