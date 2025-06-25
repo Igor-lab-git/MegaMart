@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { HomePage } from "./pages/HomePage/index";
 import { CartPage } from "./pages/CartPage/index";
 import { Header } from "./components/Header/index";
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <Provider store={store}>
-        <BrowserRouter basename="/MegaMart">
+        <HashRouter >
             <Header/>
             <Routes>
                 <Route path="/" element={<HomePage/>}/>
@@ -27,7 +27,7 @@ function App() {
                 <Route path="/product/:id" element={<ProductDetail/>}/>
             </Routes>
             <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     </Provider>
   );
 }
